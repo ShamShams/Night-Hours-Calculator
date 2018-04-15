@@ -11,7 +11,7 @@ const TimeWithPicker = ({ label, hintText, value, handleChange, color }) => (
         <TimePicker
             format="24hr"
             name={ label }
-            hintText='00:00'
+            hintText='__:__'
             value={ value }
             onChange={ handleChange }
             textFieldStyle={{
@@ -23,6 +23,7 @@ const TimeWithPicker = ({ label, hintText, value, handleChange, color }) => (
                 fontSize: '24px',
                 fontWeight: 'bold',
                 fontFamily: 'Roboto Mono',
+                cursor: 'pointer',
             }}
         />
     </div>

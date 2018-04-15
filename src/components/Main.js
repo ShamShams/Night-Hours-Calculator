@@ -58,7 +58,10 @@ class Main extends Component {
         const { maghrib, fajr, third2, third3, middle } = this.state;
         return (
             <div className="Main">
-                <h1 className='Main-title'>Calculez les horaires des tiers et du milieu de la nuit</h1>
+                <h1 className='Main-instructions'>
+                    Pour calculer les horaires des tiers et du milieu de la nuit, entrez les horaires de Maghrib et de Fajr.
+                </h1>
+
                 <div className='Times-container'>
                     <TimeWithPicker
                         label="Maghrib"
@@ -66,13 +69,25 @@ class Main extends Component {
                         handleChange={ this.handleChangeMaghrib }
                         color='#FFA500'
                     />
-                    { (third2 && middle && third3) &&
-                        <div className='fade-in'>
-                            <Time label='2e tiers' time={ third2 } color='#B22222'/>
-                            <Time label='Milieu' time={ middle } color='#663399' />
-                            <Time label='3e tiers' time={ third3 } color='#4169E1'/>
-                        </div>
-                    }
+
+                    <div className={ (third2 && middle && third3) ? 'show' : 'hide' }>
+                        <Time
+                            label='2e tiers'
+                            time={ third2 }
+                            color='#B22222'
+                        />
+                        <Time
+                            label='Milieu'
+                            time={ middle }
+                            color='#663399'
+                        />
+                        <Time
+                            label='3e tiers'
+                            time={ third3 }
+                            color='#4169E1'
+                        />
+                    </div>
+
                     <TimeWithPicker
                         label='Fajr'
                         value={ fajr }
@@ -83,7 +98,7 @@ class Main extends Component {
 
                 <Button
                     classname='Button-calculate'
-                    label="Calculer"
+                    label='Calculer'
                     disabled={ !maghrib || !fajr }
                     handleClick={ () => this.calculate(maghrib, fajr) }
                 />

@@ -1,15 +1,16 @@
 .Main {
     text-align: center;
     font-family: 'Roboto Slab';
-    color: #222;
+    /* color: #333; */
 }
 
-.Main-title {
+.Main-instructions {
     font-family: 'Cabin';
-    font-size: 22px;
+    font-size: 21px;
     font-weight: lighter;
-    color: #777;
-    width: 20rem;
+    line-height: 1.4;
+    color: #888;
+    max-width: 28rem;
     margin: 2rem auto;
     margin-bottom: 1.5rem;
 }
@@ -17,7 +18,7 @@
 .Times-container {
     margin: auto;
     width: 17rem;
-    padding: 0 2rem;
+    padding-right: 3rem;
     box-sizing: border-box;
 }
 
@@ -26,11 +27,10 @@
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
-    margin: 5px auto;
 }
 
 .Time-label {
-    margin-right: 15px;
+    margin: 0 15px 0 0;
     /* padding-top: 5px; */
     font-size: 25px;
     font-weight: bold;
@@ -52,15 +52,16 @@
     background-color: #00BCD4;
     color: #fff;
     font-size: 22px;
-    /* font-weight: bold; */
     font-family: 'Cabin';
     border: none;
     border-radius: 3px;
     box-shadow: 1px 1px 6px #aaa;
     padding: 5px 15px;
-    margin: 1.5rem auto;
+    margin: 2rem auto;
     cursor: pointer;
-    transition: 1s;
+    -webkit-transition: 0.9s;
+    -o-transition: 0.9s;
+    transition: 0.9s;
 }
 
 .Button-calculate:active {
@@ -74,6 +75,27 @@
 }
 
 /* Animations */
+.hide {
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+    margin: 13px 0;
+}
+
+.show {
+    padding: 25px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 250px;
+    opacity: 1;
+    visibility: visible;
+    transition:
+        height 0.6s 0s,
+        opacity 0.8s 0.27s;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
