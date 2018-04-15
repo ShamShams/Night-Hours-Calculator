@@ -1,0 +1,85 @@
+.Main {
+    text-align: center;
+    font-family: 'Roboto Slab';
+    color: #222;
+}
+
+.Main-title {
+    font-family: 'Cabin';
+    font-size: 22px;
+    font-weight: lighter;
+    color: #777;
+    width: 20rem;
+    margin: 2rem auto;
+    margin-bottom: 1.5rem;
+}
+
+.Times-container {
+    margin: auto;
+    width: 17rem;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.Time {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5px auto;
+}
+
+.Time-label {
+    margin-right: 15px;
+    /* padding-top: 5px; */
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Cabin';
+}
+
+.Time-time {
+    font-family: 'Roboto Mono';
+    font-weight: bold;
+    font-size: 24px;
+    border: 3px solid;
+    border-radius: 5px;
+    padding: 5px;
+    width: 80px;
+    height: 32px;
+}
+
+.Button-calculate {
+    background-color: #00BCD4;
+    color: #fff;
+    font-size: 22px;
+    /* font-weight: bold; */
+    font-family: 'Cabin';
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 6px #aaa;
+    padding: 5px 15px;
+    margin: 1.5rem auto;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.Button-calculate:active {
+    box-shadow: none;
+}
+
+.Button-calculate:disabled {
+    color: #A4A4A4;
+    background-color: #E5E5E5;
+    cursor: not-allowed;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
