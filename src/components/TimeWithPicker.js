@@ -9,16 +9,17 @@ const TimeWithPicker = ({ label, hintText, value, handleChange, color }) => (
             { label }
         </p>
         <TimePicker
+            className="TimePicker"
             format="24hr"
             name={ label }
-            hintText='__:__'
+            hintText='00:00'
             value={ value }
             onChange={ handleChange }
             textFieldStyle={{
                 border: `3px solid ${ color }`,
                 borderRadius: '5px',
-                padding: '5px',
-                width: '80px',
+                padding: '5px 5px 5px 7px',
+                width: '78px',
                 height: '32px',
                 fontSize: '24px',
                 fontWeight: 'bold',
