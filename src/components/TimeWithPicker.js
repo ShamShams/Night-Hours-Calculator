@@ -15,6 +15,7 @@ const TimeWithPicker = ({ label, hintText, value, handleChange, color }) => (
             hintText='00:00'
             value={ value }
             onChange={ handleChange }
+            underlineShow={ false }
             textFieldStyle={{
                 border: `3px solid ${ color }`,
                 borderRadius: '5px',
@@ -25,6 +26,12 @@ const TimeWithPicker = ({ label, hintText, value, handleChange, color }) => (
                 fontWeight: 'bold',
                 fontFamily: 'Roboto Mono',
                 cursor: 'pointer',
+            }}
+            inputStyle={{
+                color: '#eee',
+            }}
+            hintStyle={{
+                color: 'rgb(221, 221, 221, 0.2)',
             }}
         />
     </div>
