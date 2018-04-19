@@ -20,7 +20,8 @@ body {
     font-size: 19px;
     font-weight: lighter;
     line-height: 1.4;
-    color: #ccc;
+    /* color: #ccc; */
+    color: #7892c2;
     max-width: 28rem;
     margin: 1rem auto;
     margin-bottom: 1.5rem;
@@ -85,7 +86,19 @@ body {
     cursor: not-allowed;
 }
 
-/* Animations */
+.vecteezy {
+    margin-top: 1rem;
+    display: block;
+    color: #203255;
+    /* color: #273c6b; */
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* ANIMATIONS */
+
 .hide {
     height: 0px;
     opacity: 0;
@@ -115,4 +128,12 @@ body {
 .fade-in {
     animation-name: fadeIn;
     animation-duration: 1s;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 600px) {
+    body{
+        background-size: 200%;
+    }
 }

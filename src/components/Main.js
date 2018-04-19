@@ -102,6 +102,8 @@ class Main extends Component {
                     disabled={ !maghrib || !fajr }
                     handleClick={ () => this.calculate(maghrib, fajr) }
                 />
+
+                <a className='vecteezy' rel="nofollow" target="_blank" href="https://www.vecteezy.com">Graphics Provided by www.Vecteezy.com</a>
             </div>
         );
     }
