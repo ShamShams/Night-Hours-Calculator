@@ -67,24 +67,24 @@ class Main extends Component {
                         label="Maghrib"
                         value={ maghrib }
                         handleChange={ this.handleChangeMaghrib }
-                        color='#ffb836'
+                        color='#fec04d'
                     />
 
-                    <div className={ (third2 && middle && third3) ? 'show' : 'hide' }>
+                <div className={ (third2 && middle && third3) ? 'show' : 'hide' }>
                         <Time
                             label='2e tiers'
                             time={ third2 }
-                            color='#de6666'
+                            color='#d67474'
                         />
                         <Time
                             label='Milieu'
                             time={ middle }
-                            color='#8b62b6'
+                            color='#a376d2'
                         />
                         <Time
                             label='3e tiers'
                             time={ third3 }
-                            color='#5c7ee3'
+                            color='#6f89d9'
                         />
                     </div>
 
