@@ -137,6 +137,7 @@ body {
 @media all and (max-width: 820px) {
     body {
         background-size: 200%;
+        background-position: top;
     }
     .Main-instructions  {
         font-size: 15px;
