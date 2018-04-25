@@ -1,12 +1,13 @@
 body {
-    /* background-image: url(../assets/night-mosque.jpg); */
+    background-image: url(../assets/night-mosque.jpg);
     /* background-image: url(../assets/camels.jpg); */
     /* background-image: url(../assets/mosques.png); */
-    background-image: url(../assets/mosques-darker.png);
-    background-position: top;
+    /* background-image: url(../assets/mosques-darker.png); */
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #030D26;
+    /* background-color: #030D26; */
+    background-color: #010101;
 }
 
 .Main {
@@ -20,8 +21,8 @@ body {
     font-size: 17px;
     font-weight: lighter;
     line-height: 1.4;
-    /* color: #ccc; */
-    color: #7892c2;
+    /* color: #7892c2; */
+    color: #9d829a;
     max-width: 25rem;
     margin: 1rem auto;
     margin-bottom: 1.5rem;
@@ -89,8 +90,9 @@ body {
 .vecteezy {
     margin-top: 1rem;
     display: block;
-    color: #203255;
+    /* color: #203255; */
     /* color: #273c6b; */
+    color: #221C36;
     font-family: 'Roboto Slab', sans-serif;
     font-size: 10px;
     text-decoration: none;
