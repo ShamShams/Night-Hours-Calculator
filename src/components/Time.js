@@ -1,7 +1,5 @@
 import React from 'react';
 
-// const styles = {};
-
 const Time = ({ label, time, color }) => (
     <div className='Time'>
         <p
