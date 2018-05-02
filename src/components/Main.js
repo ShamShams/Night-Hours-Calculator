@@ -59,7 +59,7 @@ class Main extends Component {
         return (
             <div className="Main">
                 <h1 className='Main-instructions'>
-                    Pour calculer les horaires des tiers et du milieu de la nuit, entrez les horaires de Maghrib et de Fajr.
+                    Pour calculer les horaires du 2ème tiers, du dernier tiers et du milieu de la nuit, entrez les horaires de Maghrib et de Fajr.
                 </h1>
 
                 <div className='Times-container'>
