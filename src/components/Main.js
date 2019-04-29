@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import axios from 'axios';
 import Time from './Time';
 import TimeWithPicker from './TimeWithPicker';
 import Button from './Button';
@@ -13,6 +13,18 @@ class Main extends Component {
     third2: null,
     third3: null,
     middle: null,
+  };
+
+  componentDidMount = async () => {
+    try {
+      const result = await axios.get(
+        'http://api.aladhan.com/v1/timingsByCity?city=Paris&country=France&method=2'
+      );
+      const { Fajr, Maghrib } = result.data.data.timings;
+      console.log(Fajr, Maghrib);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   handleChangeMaghrib = (event, time) => {
@@ -92,7 +104,11 @@ class Main extends Component {
           handleClick={() => this.calculate(maghrib, fajr)}
         />
 
-        <a className='vecteezy' href='https://www.vecteezy.com'>
+        <a
+          className='vecteezy'
+          rel='noopener noreferrer'
+          target='_blank'
+          href='https://www.vecteezy.com'>
           Graphics Provided by www.Vecteezy.com
         </a>
       </div>
