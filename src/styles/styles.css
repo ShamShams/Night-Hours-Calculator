@@ -15,7 +15,6 @@ body {
 .Main {
   text-align: center;
   font-family: 'Roboto Slab';
-  color: #eee;
 }
 
 .Main-instructions {
@@ -63,6 +62,7 @@ body {
   padding: 5px;
   width: 80px;
   height: 32px;
+  color: #eee;
 }
 
 .Button-calculate {
@@ -99,7 +99,7 @@ body {
   color: #273c6b;
   /* Violet-theme */
   /* color: #221C36; */
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: sans-serif;
   font-size: 10px;
   text-decoration: none;
   text-align: center;
